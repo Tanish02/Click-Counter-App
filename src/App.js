@@ -1,14 +1,15 @@
 import CounterButton from "./CounterButton";
 
-function App() {
+export default function App() {
   return (
     <div>
       <h1>
-        React Counter 😁
+        Click Counter 😁
       </h1>
-      <CounterButton />
+      <CounterButton step={1} />
+      <CounterButton step={5} />
+      <CounterButton step={10} />
     </div>
   );
 }
 
-export default App;

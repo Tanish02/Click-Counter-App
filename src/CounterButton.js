@@ -1,16 +1,15 @@
 import { useState } from "react";
 
-export default function CounterButton() {
-
+export default function CounterButton({ step }) {
     const [count, setCount] = useState(0);
 
     function handleClick() {
-        setCount(count + 1);
+        setCount(count + step);
     }
 
    return (
         <button onClick={handleClick}>
-            You clicked {count} times
-        </button>
+           + {step} ➡️ {count}
+       </button>
     );
 }
